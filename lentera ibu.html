@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lentera Ibu | Menjadi Cahaya di Setiap Langkah Kecil</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --warm-sand: #F5F1ED;
+            --terracotta: #D17D6B;
+            --sage: #8A9A5B;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--warm-sand);
+            color: #333;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        
+        /* Animasi Pendaran Lentera */
+        .glow-effect {
+            position: fixed;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(209,125,107,0.15) 0%, rgba(245,241,237,0) 70%);
+            pointer-events: none;
+            z-index: 999;
+            transform: translate(-50%, -50%);
+            transition: 0.1s ease-out;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(rgba(245,241,237,0.8), rgba(245,241,237,0.8)), url('https://images.unsplash.com/photo-1544126592-807daa215695?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="glow" class="glow-effect"></div>
+
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md px-8 py-4 flex justify-between items-center border-b border-orange-100">
+        <div class="text-2xl font-bold text-[#D17D6B]">Lentera Ibu</div>
+        <div class="hidden md:flex space-x-8 font-medium">
+            <a href="#home" class="hover:text-[#D17D6B]">Beranda</a>
+            <a href="#pilar" class="hover:text-[#D17D6B]">Empat Pilar</a>
+            <a href="#edukasi" class="hover:text-[#D17D6B]">Edukasi</a>
+            <a href="#komunitas" class="hover:text-[#D17D6B]">Komunitas</a>
+        </div>
+        <button class="bg-[#D17D6B] text-white px-6 py-2 rounded-full hover:bg-[#b86656] transition">Gabung Circle</button>
+    </nav>
+
+    <section id="home" class="h-screen flex items-center justify-center text-center px-4 hero-gradient">
+        <div class="max-w-4xl" data-aos="fade-up">
+            <h1 class="text-5xl md:text-7xl mb-6 leading-tight">Menjadi Cahaya di Setiap <br><span class="italic text-[#D17D6B]">Langkah Kecil</span></h1>
+            <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                Pendampingan holistik untuk ibu modern melalui sains, psikologi, dan kasih sayang yang tulus.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#pilar" class="bg-[#D17D6B] text-white px-8 py-3 rounded-lg text-lg shadow-lg">Mulai Perjalanan</a>
+                <a href="#" class="border border-[#D17D6B] text-[#D17D6B] px-8 py-3 rounded-lg text-lg hover:bg-white transition">Dengarkan Podcast</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="pilar" class="py-24 px-8 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl mb-4">Empat Pilar Lentera</h2>
+            <div class="w-24 h-1 bg-[#D17D6B] mx-auto"></div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="bg-white p-8 rounded-2xl card-hover transition-all duration-300 border border-orange-50">
+                <div class="text-4xl mb-4">🕯️</div>
+                <h3 class="text-xl font-bold mb-3">Lentera Jiwa</h3>
+                <p class="text-gray-500 text-sm">Fokus pada kesehatan mental, manajemen stres, dan pemulihan trauma ibu.</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl card-hover transition-all duration-300 border border-orange-50">
+                <div class="text-4xl mb-4">🌿</div>
+                <h3 class="text-xl font-bold mb-3">Lentera Tumbuh</h3>
+                <p class="text-gray-500 text-sm">Parenting berbasis bukti ilmiah dan pemahaman perkembangan otak anak.</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl card-hover transition-all duration-300 border border-orange-50">
+                <div class="text-4xl mb-4">🍎</div>
+                <h3 class="text-xl font-bold mb-3">Lentera Raga</h3>
+                <p class="text-gray-500 text-sm">Nutrisi, kebugaran pascapersalinan, dan ritual perawatan diri fisik.</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl card-hover transition-all duration-300 border border-orange-50">
+                <div class="text-4xl mb-4">💎</div>
+                <h3 class="text-xl font-bold mb-3">Lentera Mandiri</h3>
+                <p class="text-gray-500 text-sm">Pemberdayaan ekonomi dan keseimbangan antara karier dan rumah tangga.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="edukasi" class="bg-[#2D3142] text-white py-24 px-8">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-4xl mb-6">Edukasi yang <br>Lebih Mendalam</h2>
+                <p class="text-gray-300 mb-8 leading-relaxed">
+                    Kami tidak memberikan tips permukaan. Di Lentera Ibu, kami membedah jurnal psikologi dan kedokteran menjadi panduan yang mudah diterapkan namun tetap akurat secara saintifik.
+                </p>
+                <ul class="space-y-4">
+                    <li class="flex items-center">
+                        <span class="w-6 h-6 bg-[#D17D6B] rounded-full mr-3 flex items-center justify-center text-xs">✓</span>
+                        Materi Neuroplasticity Anak
+                    </li>
+                    <li class="flex items-center">
+                        <span class="w-6 h-6 bg-[#D17D6B] rounded-full mr-3 flex items-center justify-center text-xs">✓</span>
+                        Analisis Hormonal Postpartum
+                    </li>
+                    <li class="flex items-center">
+                        <span class="w-6 h-6 bg-[#D17D6B] rounded-full mr-3 flex items-center justify-center text-xs">✓</span>
+                        Teknik Regulasi Emosi (CBT for Moms)
+                    </li>
+                </ul>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=400&q=80" class="rounded-lg shadow-2xl mt-8" alt="Edukasi 1">
+                <img src="https://images.unsplash.com/photo-1484863137850-59afccd31188?auto=format&fit=crop&w=400&q=80" class="rounded-lg shadow-2xl" alt="Edukasi 2">
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 px-8 text-center border-t border-orange-100 bg-white">
+        <p class="text-[#D17D6B] font-bold text-xl mb-4">Lentera Ibu</p>
+        <p class="text-gray-400 text-sm mb-6">© 2026 Membantu Ibu Menemukan Cahayanya Kembali.</p>
+        <div class="flex justify-center space-x-6">
+            <a href="#" class="text-gray-400 hover:text-[#D17D6B]">Instagram</a>
+            <a href="#" class="text-gray-400 hover:text-[#D17D6B]">Podcast</a>
+            <a href="#" class="text-gray-400 hover:text-[#D17D6B]">YouTube</a>
+        </div>
+    </footer>
+
+    <script>
+        // Mouse Glow Effect Logic
+        const glow = document.getElementById('glow');
+        window.addEventListener('mousemove', (e) => {
+            glow.style.left = e.clientX + 'px';
+            glow.style.top = e.clientY + 'px';
+        });
+    </script>
+</body>
+</html>
